@@ -2,6 +2,7 @@ import { BUS_V_MAX, BUS_V_MIN, CHARGE_CURRENT_LIMIT_A } from '../model/battery';
 import { BUCK_HEADROOM_V } from '../model/powerSystem';
 import { CELL_DATASHEET, datasheetFit } from '../model/solarCell';
 import { BLOCKING_DIODE_DROP_V } from '../model/solarArray';
+import { Schematic } from './Schematic';
 
 export function Explainer() {
   const fit = datasheetFit();
@@ -76,6 +77,11 @@ export function Explainer() {
           voltage changes, and the array dissipates the unused energy as heat harmlessly. In a real spacecraft this is
           often done with a separate shunt or by simply letting the tracker loop clamp on the battery voltage limit.
         </p>
+      </details>
+
+      <details open>
+        <summary>Inside the regulator: a representative schematic and its control loop</summary>
+        <Schematic />
       </details>
 
       <details>

@@ -369,3 +369,25 @@ body {
 .explainer li {
   max-width: 90ch;
 }
+
+/* Schematic */
+.schematic {
+  margin: 8px 0 4px;
+}
+.schematic svg {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  background: #fcfcfd;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: inherit;
+}
+.schematic-notes {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+.schematic-notes li {
+  margin-bottom: 8px;
+}
